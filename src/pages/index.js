@@ -1,15 +1,20 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../layout'
 
 import RestaurantIntroduction from '../components/RestaurantIntroduction/RestaurantIntroduction'
-import FeaturedMessage from '../components/FeaturedMessage/FeaturedMessage'
+
+import ExplanationSection from '../components/ExplanationSection/ExplanationSection'
+import LFeaturedDish from '../components/LFeaturedDish/LFeaturedDish'
+import RFeaturedDish from '../components/RFeaturedDish/RFeaturedDish'
 
 const IndexPage = () => {
   return (
     <Layout>
       <RestaurantIntroduction />
-      <FeaturedMessage />
+      <ExplanationSection />
+      <LFeaturedDish />
+      <RFeaturedDish />
+      
     </Layout>
   )
 }
