@@ -10,10 +10,8 @@
   align-items: center;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.4);
-  
   z-index: 1000;
 }
-
 
 .logoContainer {
   flex: 0 0 auto;
@@ -29,7 +27,6 @@
 
 .nav {
   flex: 1 1 auto;
-  
   text-align: right;
 }
 
@@ -41,23 +38,25 @@
 }
 
 .navList li {
-  
   display: inline-block;
   margin-left: 1rem;
 }
 
-.navList li a {
-  
+.navList li button {
   font-size: 1.2rem;
   text-decoration: none;
   color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
   transition: color 0.3s ease;
+  font-family: "Dancing Script", cursive;
 }
 
-.navList li a:hover {
+.navList li button:hover {
   color: #888;
 }
 
-.activeLink {
+.activeButton {
   font-weight: bold;
 }

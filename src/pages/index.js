@@ -1,20 +1,18 @@
 import * as React from 'react'
 import Layout from '../layout'
 
-import RestaurantIntroduction from '../components/RestaurantIntroduction/RestaurantIntroduction'
-
-import ExplanationSection from '../components/ExplanationSection/ExplanationSection'
-import LFeaturedDish from '../components/LFeaturedDish/LFeaturedDish'
-import RFeaturedDish from '../components/RFeaturedDish/RFeaturedDish'
+import Food from './Food'
+import Top from './Top'
+import Drink from './Drink'
+import Floor from './Floor'
 
 const IndexPage = () => {
   return (
     <Layout>
-      <RestaurantIntroduction />
-      <ExplanationSection />
-      <LFeaturedDish />
-      <RFeaturedDish />
-      
+      <Top />
+      <Food />
+      <Drink />
+      <Floor />
     </Layout>
   )
 }

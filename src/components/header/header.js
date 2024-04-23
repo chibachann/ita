@@ -1,16 +1,23 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
-import * as styles from './header.module.css'
+import * as React from 'react';
+import * as styles from './header.module.css';
 
 const navigationItems = [
-  { path: '/a-la-carte', label: 'Drink' },
-  { path: '/course-meals', label: 'Course' },
-  { path: '/interior', label: 'Floor' },
-  { path: '/restaurant-info', label: 'ShopInfo' },
-  { path: '/map', label: 'Map' },
-]
+  { id: 'top', label: 'Top'},
+  { id: 'food', label: 'Food' },
+  { id: 'drink', label: 'Drink' },
+  { id: 'floor', label: 'Floor' },
+  { id: 'shopinfo', label: 'ShopInfo' },
+  { id: 'map', label: 'Map' },
+];
 
 const Header = () => {
+  const handleClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
@@ -20,15 +27,13 @@ const Header = () => {
         <ul className={styles.navList}>
           {navigationItems.map((item, index) => (
             <li key={index}>
-              <Link to={item.path} activeClassName={styles.activeLink}>
-                {item.label}
-              </Link>
+              <button onClick={() => handleClick(item.id)}>{item.label}</button>
             </li>
           ))}
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
