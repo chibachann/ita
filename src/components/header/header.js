@@ -7,7 +7,6 @@ const navigationItems = [
   { id: 'drink', label: 'Drink' },
   { id: 'floor', label: 'Floor' },
   { id: 'shopinfo', label: 'ShopInfo' },
-  { id: 'map', label: 'Map' },
 ];
 
 const Header = () => {

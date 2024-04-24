@@ -13,4 +13,4 @@
 
 ### 現在の見た目
 
-![Screenshot Version 2](screenshot_ver2.jpg)
+![Screenshot Version 3](screenshot_ver3.jpg)

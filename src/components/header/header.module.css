@@ -60,3 +60,25 @@
 .activeButton {
   font-weight: bold;
 }
+
+@media (max-width: 1279px) {
+  .header {
+    justify-content: flex-end;
+    padding: 0.5rem;
+  }
+
+  .logoText {
+    font-size: 1.3rem;
+  }
+
+  .navList li {
+    display: inline-block;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: none;
+  }
+}

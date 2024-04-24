@@ -5,6 +5,7 @@ import Food from './Food'
 import Top from './Top'
 import Drink from './Drink'
 import Floor from './Floor'
+import ShopInfo from './ShopInfo'
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <Food />
       <Drink />
       <Floor />
+      <ShopInfo />
     </Layout>
   )
 }

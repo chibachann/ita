@@ -45,3 +45,23 @@
     max-width: 800px;
     margin: 0 auto;
   }
+
+  @media (max-width: 480px) {
+    .section {
+      height: 40vh;
+    }
+  
+  
+    .title h1 {
+      font-size: 1.3rem;
+    }
+  
+    .subtitle {
+      font-size: 0.8rem;
+    }
+
+    .explain {
+      font-size: 0.7rem;
+    }
+  }
+  

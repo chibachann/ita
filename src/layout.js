@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Header from './components/header/header'
+import Footer from './components/footer/footer'
 import './layout.css'
 
 const Layout = ({ children }) => {
@@ -7,9 +8,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, レストラン名
-      </footer>
+      <Footer />
     </>
   )
 }
