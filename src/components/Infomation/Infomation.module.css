@@ -52,3 +52,27 @@ hr {
   border-top: 1px solid #ccc;
   margin: 0.5rem 0;
 }
+
+@media (max-width:480px) {
+  .shopInfo {
+    padding: 1rem;
+  }
+
+  .shopInfoTitle {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .infoContainer {
+    flex-direction: column;
+  }
+
+  .leftColumn {
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .rightColumn {
+    padding-left: 0;
+  }
+}
