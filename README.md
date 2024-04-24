@@ -11,6 +11,4 @@
 
 ## スクリーンショット
 
-### 現在の見た目
-
-![Screenshot Version 3](screenshot_ver3.jpg)
+width_370,width_880,width_1400とそれぞれ画像をjpgで保存して保存されている。
